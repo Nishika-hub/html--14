@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Travel Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>✈️ My Travel Diary</h1>
+        <a href="home.html">Home</a> | 
+        <a href="gallery.html">Photo Gallery</a> | 
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <hr>
+
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any suggestion ,Please fill it here:</p>
+
+        <form>
+            Name: <br>
+            <input type="text" id="username" placeholder="Enter your Name "><br><br>
+            
+            Message: <br>
+            <textarea placeholder="Write your message"></textarea><br><br>
+
+            <button type="button" onclick="sayHello()">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Made by Me</p>
+    </footer>
+
+    <script>
+        function sayHello() {
+            var user = document.getElementById("username").value;
+            if (user == "") {
+                alert("Please enter your name!");
+            } else {
+                alert("Thank you " + user + "!Your Message has been sent.");
+            }
+        }
+    </script>
+
+</body>
+</html>
